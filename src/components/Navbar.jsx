@@ -1,11 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from "react-router-dom"
+
 
 const Navbar = () => {
     return (
         <div className="navbar navbar-dark bg-dark">
-            <link className="btn btn-outline-primary" to="/">Inicio</link>
-            <link className="btn btn-outline-primary" to="/contacto">Contacto</link>
-            <link className="btn btn-outline-primary" to="/blog">Blog</link>
+            <NavLink className="btn btn-outline-primary" to="/">Inicio</NavLink>
+            <NavLink className="btn btn-outline-primary" to="/contacto">Contacto</NavLink>
+            <NavLink className="btn btn-outline-primary" to="/blog">Blog</NavLink>
         </div>
     )
 }
